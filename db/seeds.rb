@@ -1,6 +1,7 @@
  require 'faker'
 
-Post.create!( title: "beijugor", body: "ruiquan wu shi beijugor")
+#Post.create!( title: "beijugor", body: "ruiquan wu shi beijugor")
+Advertisement.create!(title: "lol_guide", copy: "championsmaster LLC", price: 10)
 =begin
  # Create Posts
  50.times do
