@@ -1,5 +1,7 @@
  require 'faker'
- 
+
+Post.create!( title: "beijugor", body: "ruiquan wu shi beijugor")
+=begin
  # Create Posts
  50.times do
    Post.create!(
@@ -16,7 +18,9 @@
      body: Faker::Lorem.paragraph
    )
  end
- 
+=end 
+
+
  puts "Seed finished"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
