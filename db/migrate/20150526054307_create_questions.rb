@@ -4,7 +4,7 @@ class CreateQuestions < ActiveRecord::Migration
       t.string :title
       t.text :body
       t.boolean :resolved
-
+      
       t.timestamps null: false
     end
   end

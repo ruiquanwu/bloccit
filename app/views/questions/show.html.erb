@@ -1,0 +1,10 @@
+<h1> <%= @question.title + "(#{@question.resolved})"%> </h1>
+
+<%= link_to "Edit", edit_question_path, class: 'btn btn-success'%>
+<%= link_to "Back", questions_path, class: 'btn btn-success' %>
+<%= link_to 'Destroy', question_path(@question),
+              method: :delete,
+              data: { confirm: 'Are you sure?' },
+              class: 'btn btn-success'%>
+
+<p> <%= @question.body %> </p>
