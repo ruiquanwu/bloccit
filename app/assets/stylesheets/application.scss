@@ -1,7 +1,15 @@
 @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap";
 .social-btn {
   display: block;
   width: 100%;
   text-align: center;
 }
+
+ .user-info {
+   margin-top: 9px;
+ }
+ 
+ .nav {
+   margin-top: 5px;
+ }
