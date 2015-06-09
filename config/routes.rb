@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :posts
-
+  resources :topics do
+    resources :posts, except: [:index]
+  end
   
   get 'welcome/contact'
   
