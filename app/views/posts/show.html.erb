@@ -2,6 +2,13 @@
 
 <% if policy(@post).edit? %>
    <%= link_to "Edit", edit_topic_post_path(@topic, @post), class: 'btn btn-success' %>
+  <% if @post.summary_id == nil %>
+    <%= link_to "Create_Summary", new_topic_post_summary_path(@topic, @post), class: 'btn btn-success' %>
+  <% else %>
+    <%= link_to "View_Summary", topic_post_summary_path(@topic, @post, Summary.find(@post.summary_id)), class: 'btn btn-success'%>
+  <%end%>
+
 <% end %>
+
 
 <p><%= @post.body %></p>
