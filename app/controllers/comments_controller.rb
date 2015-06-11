@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-   def create
+  def create
     @topic = Topic.find(params[:topic_id])
     @post = @topic.posts.find(params[:post_id])
     @comment = @post.comments.new(comment_params)
