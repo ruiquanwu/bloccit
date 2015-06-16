@@ -64,6 +64,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
+  gem 'newrelic_rpm'
+  gem 'puma'
 end
 
 group :production do
