@@ -7,9 +7,9 @@
      confirmed_at Time.now
      
      factory :user_with_post_and_comment do
-       after(:build) do |user_with_post_and_comment|
-         post = create(:post, user: user_with_post_and_comment)
-         create(:comment, user: user_with_post_and_comment, post: post)
+       after(:build) do |user|
+         post = create(:post, user: user)
+         create(:comment, user: user)
        end
      end
    end
